@@ -9,3 +9,4 @@ class Product(Base):
     description: Column[str] = Column(String, nullable=True)
     price: Column[float] = Column(Float)
     stock: Column[int] = Column(Integer)
+    discount: Column[int] = Column(Integer)

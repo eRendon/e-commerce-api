@@ -3,9 +3,9 @@ from sqlalchemy.orm import Session
 from typing import List, Optional, Dict, Type
 
 from app.api.core.security import TokenData
-from app.api.domain.repositories.product_repository import ProductRepository
-from app.api.domain.schemas.product import ProductCreate, ProductUpdate, Product
-from app.api.domain.services.product_service import ProductService
+from app.modules.beauty.domain.repositories.product_repository import ProductRepository
+from app.modules.beauty.application.dtos.product.productDTO import ProductCreate, ProductUpdate, Product
+from app.modules.beauty.domain.services.product_service import ProductService
 from app.db.session import get_db
 from app.middleware.auth_middleware import get_current_user
 

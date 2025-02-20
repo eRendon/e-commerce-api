@@ -1,7 +1,7 @@
 from typing import Dict, Optional, List, Type
 
-from app.api.domain.repositories.product_repository import ProductRepository
-from app.api.domain.schemas.product import ProductCreate, Product
+from app.modules.beauty.domain.repositories.product_repository import ProductRepository
+from app.modules.beauty.application.dtos.product.productDTO import ProductCreate, Product
 
 
 class ProductService:
